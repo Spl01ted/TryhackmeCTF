@@ -61,7 +61,9 @@ The third key is in /root directory, so we need to escalate our priveleges.
 The basic vector is checking the binaries that have SUID set.
 The following command will help us
 
-bash``<br>find / -perm -4000 -type f 2>/dev/null<br>
+```bash
+find / -perm -4000 -type f 2>/dev/null
+```
 <img width="1488" height="373" alt="Screenshot From 2026-01-01 19-43-40" src="https://github.com/user-attachments/assets/582634c7-01e2-47af-846d-2197128c8219" />
 
 Then we need to check each binary in GTFObins, and we can use nmap binary to escalate our priveleges
